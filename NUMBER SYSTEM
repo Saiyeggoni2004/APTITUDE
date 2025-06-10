@@ -1,0 +1,93 @@
+Certainly! Drawing on the information from the sources, here are examples for the concepts discussed:
+
+### Number System Concepts and Examples
+
+*   **Number System**
+    *   The Number System involves numbers, their relationships, and various operations performed on them. Operations include **addition, subtraction, multiplication, division, squares, cubes, decimals, and fractions**. Numbers are formed using digits from **0 to 9** to create values in crores, millions, and billions.
+
+*   **Simplifications**
+    *   Simplifications involve using **logics and tricks to think in a simple way** when solving an equation.
+
+*   **Place Value and Face Value**
+    *   **Face Value**: The face value of a digit is **the digit itself**, regardless of its position in a number.
+        *   For the number **1947**:
+            *   The face value of 1 is **1**.
+            *   The face value of 9 is **9**.
+            *   The face value of 4 is **4**.
+            *   The face value of 7 is **7**.
+        *   For a digit like **5**: its face value is **5**.
+    *   **Place Value**: The place value of a digit depends on its **position** within a number.
+        *   For the number **1947**:
+            *   The place value of 7 (in the ones place) is **7** (7 * 1).
+            *   The place value of 4 (in the tens place) is **40** (4 * 10).
+            *   The place value of 9 (in the hundreds place) is **900** (9 * 100).
+            *   The place value of 1 (in the thousands place) is **1000** (1 * 1000).
+
+*   **Divisibility Rules**
+    *   These are short-cut tricks to determine if a number is divisible by others, such as **2, 9, or 11**, just by looking at it. The source mentions these rules but does not provide specific numerical examples for them.
+
+*   **Standard Formulas**
+    *   For faster calculations in aptitude, standard formulas are essential.
+        *   Examples: **(a + b)² = a² + b² + 2ab** and **(a - b)² = a² + b² - 2ab**.
+
+### Types of Numbers
+
+*   **Natural Numbers**
+    *   Also known as counting numbers, they start from 1.
+    *   Examples: **1, 2, 3, ... (up to infinity)**.
+    *   They do not include negative numbers or zero. The smallest natural number is **1**.
+
+*   **Whole Numbers**
+    *   These include all natural numbers plus zero.
+    *   Examples: **0, 1, 2, 3, ... (up to infinity)**.
+    *   The smallest whole number is **0**. They do not contain negative integers.
+
+*   **Integers**
+    *   Integers comprise negative numbers, positive numbers, and zero.
+    *   Examples: From **minus infinity to plus infinity**, including **zero**.
+    *   **Positive integers** are **1 to infinity**.
+    *   **Negative integers** are **-1 down to minus infinity**.
+    *   **Zero** is considered neither a positive nor a negative integer.
+
+*   **Even Numbers**
+    *   Any counting number that is **divisible by 2** is an even number.
+    *   Examples: A number is even if its units place contains **0, 2, 4, 6, or 8**.
+
+*   **Odd Numbers**
+    *   Any counting number that is **not divisible by 2** is an odd number.
+    *   Examples: **1, 3, 5, 7, ...** and so on. A number is odd if its units place contains **1, 3, 5, 7, or 9**.
+
+*   **Prime Numbers**
+    *   A prime number must have **exactly two factors**: 1 and the number itself.
+    *   Examples:
+        *   **2** (factors: 1, 2). It is the **only even number that is also a prime number**.
+        *   **3** (factors: 1, 3). It is the **lowest odd prime number**.
+        *   **7** (factors: 1, 7).
+    *   Numbers that are **not prime**:
+        *   **1** (has only one factor: 1).
+        *   **4** (has three factors: 1, 2, 4).
+
+*   **Composite Numbers**
+    *   A composite number is any number that has **more than two factors**.
+    *   Examples:
+        *   **4** (factors: 1, 2, 4).
+        *   **15** (factors: 1, 3, 5, 15).
+    *   Numbers that are **not composite**:
+        *   **1** (has only one factor).
+        *   **2** (has exactly two factors, making it prime).
+        *   **3** (has exactly two factors, making it prime).
+        *   **5** (has exactly two factors, making it prime).
+
+*   **Co-prime Numbers**
+    *   Two numbers are considered co-prime if their **highest common factor is 1**. This means the only common table they appear in is the 1-table. The source states that co-prime numbers do not necessarily have to be prime numbers themselves, nor do they have to be both even or both odd. The source defines them but does not provide specific numerical examples of a pair of co-prime numbers.
+
+*   **Rational Numbers**
+    *   Any number that can be expressed in the form **p/q, where q is not equal to zero**, is a rational number.
+    *   Examples: Any **fraction**. The source also mentions **22/7** as an approximate value for pi, which is itself a rational number.
+
+*   **Irrational Numbers**
+    *   These are numbers that **cannot be defined or expressed exactly as a specific value**.
+    *   Examples: **√2** (which is approximately 1.414 and so on) and **π (pi)**.
+
+*   **Real Numbers**
+    *   Real numbers are a **combination of rational and irrational numbers**. This means they include values that can be stated exactly and those that can only be approximated. The source defines them but does not provide specific numerical examples beyond what's already covered by rational and irrational numbers.
