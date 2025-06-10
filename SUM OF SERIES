@@ -1,0 +1,75 @@
+**1. Sum of Natural Numbers**
+The formula for the sum of natural numbers up to 'n' is **n * (n+1) / 2**.
+
+*   **Example Problem:** Find the sum of 1 + 2 + 3 + 4 + ... + 40.
+    *   Here, n = 40.
+    *   Substitute n into the formula: 40 * (40+1) / 2.
+    *   This simplifies to 40 * 41 / 2.
+    *   Calculation: 20 * 41 = **820**.
+
+**2. Sum of Squares of Natural Numbers**
+The formula for the sum of squares of natural numbers up to n² is **n * (n+1) * (2n+1) / 6**.
+
+*   **Example Problem:** Find the sum of 1² + 2² + 3² + ... + 15².
+    *   Here, n = 15.
+    *   Substitute n into the formula: 15 * (15+1) * (2*15+1) / 6.
+    *   This simplifies to 15 * 16 * 31 / 6.
+    *   Calculation: (5 * 8 * 31) = 40 * 31 = **1240**.
+
+**3. Sum of Cubes of Natural Numbers**
+The formula for the sum of cubes of natural numbers up to n³ is **[n * (n+1) / 2]²**. This is the same as the sum of natural numbers formula, but squared.
+
+*   **Example Problem:** Find the sum of 1³ + 2³ + 3³ + ... + 9³.
+    *   Here, n = 9.
+    *   Substitute n into the formula: [9 * (9+1) / 2]².
+    *   This simplifies to [9 * 10 / 2]² = [9 * 5]² = 45².
+    *   Calculation: **2025**.
+
+**4. Sum of Odd Numbers**
+The formula for the sum of odd numbers up to 'n' (where n is the last odd number) is **x²**, where **x = (n+1) / 2**.
+
+*   **Example Problem:** Find the sum of 1 + 3 + 5 + ... + 51.
+    *   Here, n = 51.
+    *   Calculate x: x = (51+1) / 2 = 52 / 2 = 26.
+    *   The sum is x²: 26² = **676**.
+
+**5. Sum of Even Numbers**
+The formula for the sum of even numbers up to 'n' (where n is the last even number) is **x * (x+1)**, where **x = n / 2**.
+
+*   **Example Problem:** Find the sum of 2 + 4 + 6 + ... + 60.
+    *   Here, n = 60.
+    *   Calculate x: x = 60 / 2 = 30.
+    *   The sum is x * (x+1): 30 * (30+1) = 30 * 31.
+    *   Calculation: **930**.
+
+**6. Sum of Squares of Natural Numbers (Non-Consecutive/Middle Series)**
+When the series does not start from 1 (e.g., 10² + 11² + ...), the same formulas are used by finding the sum from 1 up to the end number, and then subtracting the sum from 1 up to the number *before* the start of the given series.
+
+*   **Example Problem:** Find the sum of 10² + 11² + 12² + ... + 20².
+    *   **Step 1: Calculate the sum from 1² to 20²**.
+        *   n = 20.
+        *   Formula: 20 * (20+1) * (2*20+1) / 6 = 20 * 21 * 41 / 6.
+        *   Calculation: (10 * 7 * 41) = 70 * 41 = **2870**.
+    *   **Step 2: Calculate the sum from 1² to 9²** (the number before 10²).
+        *   n = 9.
+        *   Formula: 9 * (9+1) * (2*9+1) / 6 = 9 * 10 * 19 / 6.
+        *   Calculation: (3 * 5 * 19) = 15 * 19 = **285**.
+    *   **Step 3: Subtract the result from Step 2 from the result of Step 1**.
+        *   2870 - 285 = **2585**.
+
+**7. Sum of Odd Numbers (Non-Consecutive/Middle Series)**
+Similar to the square series, for odd number series that don't start from 1, calculate the sum from 1 up to the end number and subtract the sum from 1 up to the odd number *before* the start of the given series.
+
+*   **Example Problem:** Find the sum of 51 + 53 + 55 + ... + 99.
+    *   **Step 1: Calculate the sum of odd numbers from 1 to 99**.
+        *   n = 99.
+        *   Calculate x: x = (99+1) / 2 = 100 / 2 = 50.
+        *   Sum = x² = 50² = **2500**.
+    *   **Step 2: Calculate the sum of odd numbers from 1 to 49** (the odd number before 51).
+        *   n = 49.
+        *   Calculate x: x = (49+1) / 2 = 50 / 2 = 25.
+        *   Sum = x² = 25² = **625**.
+    *   **Step 3: Subtract the result from Step 2 from the result of Step 1**.
+        *   2500 - 625 = **1875**.
+
+These examples demonstrate how to apply the various formulas for finding sums of different types of series, including those that do not start from the first number. The key is to remember the basic formulas and apply logical subtraction for non-starting series.
