@@ -1,0 +1,58 @@
+### Divisibility Rules
+Divisibility rules are shortcuts to determine if a number is divisible by another without performing long division.
+*   **Divisibility by 9**: A number is divisible by 9 if the **sum of its digits** is divisible by 9.
+    *   **Problem Example 1**: To find the smallest whole number 'd' such that 481d73 is divisible by 9, you sum its digits: 4+8+1+d+7+3 = 29+d. For this sum to be divisible by 9, 'd' must be 7, as 29+7 = 36, which is divisible by 9. The smallest whole number condition is important here.
+    *   **Problem Example 2**: For a number like 42*573 to be divisible by 9, the sum of its digits (4+2+*+5+7+3 = 21 + *) must be divisible by 9. Here, * should be 6 to make the sum 27, which is divisible by 9.
+
+*   **Divisibility by 11**: A number is divisible by 11 if the **difference between the sum of the digits at odd places and the sum of the digits at even places** is either zero or a multiple of 11.
+    *   **Problem Example 1**: When a three-digit number 4a3 is added to 984 to give a four-digit number 13b7, and 13b7 is divisible by 11, we need to find 'a' and 'b'. From the addition, we know a+8 = b (considering carries, the full number is 13b7, not just b). Applying the 11-divisibility rule to 13b7: (sum of digits at odd places) - (sum of digits at even places) = (1+b) - (3+7) = (1+b) - 10. For this to be divisible by 11 (or equal to 0 for the smallest value), (1+b) - 10 = 0, which implies b = 9. Substituting b=9 into a+8=b, we get a=1. Thus, a+b = 1+9 = 10.
+    *   **Problem Example 2**: To find the smallest whole number in place of '*' in 9*25716 that is divisible by 11, sum odd places (9+2+7+6 = 24) and even places (*+5+1 = *+6). The difference (24 - (*+6)) must be 0 or a multiple of 11. If 24 - (*+6) = 11, then 18 - * = 11, which gives * = 7. The source shows another example where the values sum to 22 and 8+star, and the difference is 14-star. To get a smallest whole number, 14-star = 11 (a multiple of 11), leading to star = 3.
+
+*   **Divisibility by Composite Numbers (e.g., 72, 99)**: When a divisibility rule for a large number is unknown, it can be broken down into **co-prime factors**.
+    *   **Co-prime numbers** are numbers that have only 1 as their common factor.
+    *   For a number to be divisible by a composite number, it **must be divisible by each of its co-prime factors**.
+    *   **Problem Example 1**: For a number to be divisible by 72, it must be divisible by both 9 and 8, as 72 = 9 × 8 and 9 and 8 are co-prime. The source demonstrates checking a number (42*573, which is actually the one for 9 divisibility) where the star is 6, making the sum 27 (divisible by 9). Then it checks divisibility by 8 using the last three digits (576 divided by 8 is 72, confirming divisibility).
+    *   **Problem Example 2**: Similarly, for a number to be completely divisible by 99, it must be divisible by both 11 and 9, since 99 = 11 × 9 and 11 and 9 are co-prime. You would apply both the divisibility rule for 9 and 11 to the given options.
+
+### Fundamental Arithmetic Principles
+
+*   **Dividend, Divisor, Quotient, and Remainder**: This fundamental rule is expressed as: **Dividend = Divisor × Quotient + Remainder**.
+    *   The **Dividend** is the number being divided.
+    *   The **Divisor** is the number by which the dividend is divided.
+    *   The **Quotient** is the result of the division.
+    *   The **Remainder** is the value left over after the division.
+    *   **Problem Example 1**: When 90 is divided by 4, the quotient is 22 and the remainder is 2. So, 90 = 4 × 22 + 2. This rule is essential for solving problems where a number is unknown or when finding exact divisibility.
+    *   **Problem Example 2**: If a number was supposed to be divided by 21 but was mistakenly divided by 12, yielding a quotient of 35 and a remainder of 0, the original number can be found using the formula: Number = 12 × 35 + 0 = 420. Then, to find the quotient when this number (420) is correctly divided by 21, 420 / 21 = 20.
+
+### Arithmetic Operations and Simplification Techniques
+
+*   **Units Digit in Products**: To find the units digit in a product of several numbers, you only need to **multiply their respective units digits**.
+    *   **Problem Example**: In the product 4 × 8 × 7 × 3, multiply 4 × 8 = 32 (units digit 2), then multiply that unit digit by 7: 2 × 7 = 14 (units digit 4), and finally by 3: 4 × 3 = 12 (units digit 2). The units digit of the entire product is 2.
+
+*   **Place Value and Face Value**:
+    *   The **Face Value** of a digit is the digit itself.
+    *   The **Place Value** of a digit depends on its position in the number (e.g., ones, tens, hundreds, thousands place).
+    *   **Problem Example**: In the number 5000, the face value of 5 is 5, and its place value is 5000 (as it's in the thousands place). The product of these is 5 × 5000 = 25000.
+
+*   **Simplification using Algebraic Formulas**: Memorising standard algebraic formulas significantly simplifies complex expressions.
+    *   **Problem Example 1**: For expressions like (a + b)² + (a - b)² / (a² + b²), applying the identity **(a + b)² + (a - b)² = 2(a² + b²)** immediately simplifies it to 2(a² + b²) / (a² + b²) = 2.
+    *   **Problem Example 2**: For expressions like (a + b)² - (a - b)² / ab, applying the identity **(a + b)² - (a - b)² = 4ab** simplifies it to 4ab / ab = 4.
+    *   **Problem Example 3**: For expressions like (a³ - b³) / (a² + ab + b²), using the formula **a³ - b³ = (a - b)(a² + ab + b²)**, the expression simplifies to (a - b)(a² + ab + b²) / (a² + ab + b²) = a - b.
+    *   **Problem Example 4**: To calculate 1904 × 1904, it can be written as (1900 + 4)², which uses the (a+b)² formula to simplify the calculation to 1900² + 4² + 2 * 1900 * 4 = 3610000 + 16 + 15200 = 3625216.
+
+*   **Strategic Simplification of Multiplication**: It is often easier to multiply by powers of 10.
+    *   **Problem Example 1**: To calculate 112 × 5⁴, one can rewrite 5 as 10/2. So, 112 × (10/2)⁴ = 112 × (10000/16). This simplifies to 7 × 10000 = 70000, avoiding complex multiplication.
+    *   **Problem Example 2**: To multiply by numbers close to multiples of 10 or 100, such as 29, rewrite it as (30 - 1). For instance, 84 × 29 becomes 84 × (30 - 1) = (84 × 30) - (84 × 1) = 2520 - 84 = 2436 (this is a different example than the source, but illustrates the principle applied in the source where 29 was part of a larger sum). The source's example demonstrates 84 * 29 - 84 * (-1) + 365, using 29 as (30-1) to simplify the first term and then combining it with other numbers.
+
+*   **Finding Specific Divisible Numbers**:
+    *   **Smallest Number with 'x' digits exactly divisible by a given number**: Divide the smallest 'x'-digit number by the divisor. If there's a remainder, subtract it from the smallest 'x'-digit number, and then add the divisor to that result to get the next divisible 'x'-digit number.
+        *   **Problem Example**: To find the smallest six-digit number exactly divisible by 111, start with 100000 (smallest six-digit number). Divide 100000 by 111, which gives a remainder of 100. Subtracting this remainder (100) from 100000 gives 99900, which is divisible by 111 but is a five-digit number. To get the smallest six-digit number, add the divisor (111) to 99900, resulting in 100011.
+    *   **Largest Number with 'x' digits exactly divisible by a given number**: Divide the largest 'x'-digit number by the divisor. The remainder is then subtracted from the largest 'x'-digit number.
+        *   **Problem Example**: To find the largest five-digit number exactly divisible by 91, start with 99999 (largest five-digit number). Divide 99999 by 91, which gives a remainder of 81. Subtracting 81 from 99999 yields 99918, which is the largest five-digit number divisible by 91.
+    *   **Nearest Number to a given number that is exactly divisible by another number**: Divide the given number by the divisor. If there's a remainder, consider two possibilities: subtracting the remainder from the original number, or adding (divisor - remainder) to the original number. The result closest to the original number is the answer.
+        *   **Problem Example**: To find the number nearest to 9217 that is exactly divisible by 88, divide 9217 by 88. The remainder is 65.
+            *   Possibility 1: Subtract the remainder: 9217 - 65 = 9152.
+            *   Possibility 2: Add (divisor - remainder): 9217 + (88 - 65) = 9217 + 23 = 9240.
+            Comparing 9152 and 9240 to 9217, 9240 is closer (difference of 23) than 9152 (difference of 65). Therefore, 9240 is the nearest number divisible by 88.
+
+*   **General Simplification of Expressions**: Look for common factors to cancel out numbers in fractions or multiplications to expedite calculation. For example, in 3375/4500, continuously dividing by common factors like 5 and then 9 simplifies the expression to 3/4. Similarly, in expressions like 800/64 * 1296/36, identifying and cancelling common factors quickly leads to the answer.
