@@ -1,0 +1,231 @@
+*   **1. Multiplication of Decimals (Example: 0.1 × 0.2)**
+    *   **Method:** To multiply decimals, first multiply the numbers as if they were whole numbers, ignoring the decimal points. Then, count the total number of digits after the decimal point in all the numbers being multiplied. Place the decimal point in the product so that it has the same total number of digits after the decimal point.
+    *   **Calculation:**
+        1.  Multiply 1 by 2, which gives 2.
+        2.  Count the digits after the decimal point: 0.1 has one digit, and 0.2 has one digit, for a total of two digits.
+        3.  Place the decimal point in the product (2) so that there are two digits after it. Since 2 is a single digit, add a leading zero to make it two digits: 02. Then, place the decimal point: **0.02**.
+    *   **Answer:** 0.02
+
+*   **2. Multiplication of Decimals (Example: 1.4 × 0.5)**
+    *   **Method:** Same as above. Multiply the numbers without decimal points, then count the total decimal places.
+    *   **Calculation:**
+        1.  Multiply 14 by 5, which gives 70.
+        2.  Count the digits after the decimal point: 1.4 has one digit, and 0.5 has one digit, for a total of two digits.
+        3.  Place the decimal point in the product (70) so that there are two digits after it: 0.70. The speaker notes that 0.70 is the same as **0.7** because trailing zeros after the decimal point do not change the value.
+    *   **Answer:** 0.7
+
+*   **3. Addition of Decimals (Example: 0.4 + 0.56)**
+    *   **Method:** When adding decimals, ensure the decimal points are aligned. You can add zeros to the end of numbers to make them have the same number of decimal places for easier addition. Then, add digit by digit from right to left, carrying over if necessary.
+    *   **Calculation:**
+        1.  Consider 0.4 as 0.40 to align with 0.56.
+        2.  Add the rightmost digits: 0 + 6 = 6.
+        3.  Add the next digits (after the decimal point): 4 + 5 = 9.
+        4.  Add the whole number parts: 0 + 0 = 0.
+        5.  The result is **0.96**.
+    *   **Answer:** 0.96
+
+*   **4. Finding a Fraction Between Two Given Fractions (Example: Which fraction is greater than 3/4 and less than 5/6?)**
+    *   **Method:** Convert the given fractions and the options into decimals to easily compare their values.
+    *   **Calculation:**
+        1.  Convert 3/4 to decimal: Divide 3 by 4. 3 ÷ 4 = **0.75**.
+        2.  Convert 5/6 to decimal: Divide 5 by 6. 5 ÷ 6 = **0.833...** (recurring 3).
+        3.  Now, convert the provided options (not explicitly listed in the source, but implied to be options A, B, C, D) to decimals to find the one between 0.75 and 0.833.... The speaker specifically uses 4/5 as an example option.
+        4.  Convert 4/5 to decimal: Divide 4 by 5. 4 ÷ 5 = **0.8**.
+        5.  Compare: 0.75 < 0.8 < 0.833....
+    *   **Answer:** 4/5 is the correct fraction.
+
+*   **5. Multiplication with Scientific Notation and Decimal Places (Example: 4 × 162 with 6 total decimal places)**
+    *   **Method:** Multiply the whole number parts. Then, count the total number of decimal places in the original numbers. Express the result in scientific notation using powers of 10 (`10^-N`, where N is the total number of decimal places). Then convert this to the desired format, typically by adjusting the decimal point and the power of 10 to match given options.
+    *   **Calculation:**
+        1.  The speaker uses an example of multiplying digits that result in `648` (e.g., 4 × 162).
+        2.  Assume the original numbers had two decimal places and four decimal places respectively, making a total of six decimal places after multiplication.
+        3.  The intermediate result is `648`. With six decimal places, this is `0.000648`.
+        4.  This can be expressed as `648 × 10^-6`.
+        5.  If the options are in the format `X.XX × 10^-Y`, for example, `6.48 × 10^-4`:
+            *   To change `648 × 10^-6` to `6.48 × 10^-Y`, the decimal point moved two places to the left (from `648.` to `6.48`). Moving the decimal two places to the left means increasing the exponent by 2.
+            *   So, `648 × 10^-6` becomes `6.48 × 10^(-6+2)` = `6.48 × 10^-4`.
+    *   **Answer:** 6.48 × 10^-4
+
+*   **6. Simplification using Algebraic Formula (Example: (0.96)³ - (0.1)³ / (0.96)² + (0.96)(0.1) + (0.1)²)**
+    *   **Method:** Recognise the expression as a standard algebraic formula: `(a³ - b³) / (a² + ab + b²)`. This simplifies directly to `a - b`. Standard formulas should be memorised to quickly solve such problems.
+    *   **Calculation:**
+        1.  Identify `a = 0.96` and `b = 0.1`.
+        2.  Apply the formula: `a - b = 0.96 - 0.1`.
+        3.  Subtracting: `0.96 - 0.10` (add a zero for alignment) = **0.86**.
+    *   **Answer:** 0.86
+
+*   **7. Finding the Value of X in a Decimal Equation**
+    *   **Method:** Convert decimal numbers into their equivalent form using powers of 10 (`10^-N`) to simplify division and multiplication. Then, perform algebraic manipulation to isolate X and convert the result back to decimal form.
+    *   **Calculation (as per speaker's steps, noting potential numerical discrepancy):**
+        1.  The speaker states an equation involving X, where at one point, X is calculated as `X = 1.44 × 10^-4`. (The exact initial equation is not explicitly stated, but the process of converting to powers of 10 and cancelling `1.44` implies a division like `X = (1.44 * 10^-A) / (1.44 * 10^-B)`).
+        2.  To convert `1.44 × 10^-4` to a decimal, the decimal point needs to be moved 4 places to the left.
+        3.  `1.44` becomes `0.000144`.
+        4.  However, the speaker states the result is `0.00144`. This implies the value was `1.44 × 10^-3`.
+    *   **Answer (as stated by speaker for final decimal value):** 0.00144
+
+*   **8. Simplification using Algebraic Formula (Example: (2.39)² - (1.61)² / (2.39 - 1.61))**
+    *   **Method:** Recognise the expression as a standard algebraic formula: `(a² - b²) / (a - b)`. This simplifies directly to `a + b`. The formula `a² - b²` expands to `(a - b)(a + b)`, so `(a - b)(a + b) / (a - b)` becomes `a + b`.
+    *   **Calculation:**
+        1.  Identify `a = 2.39` and `b = 1.61`.
+        2.  Apply the formula: `a + b = 2.39 + 1.61`.
+        3.  Add the numbers:
+            *   9 + 1 = 10 (write 0, carry 1)
+            *   3 + 6 + 1 (carry) = 10 (write 0, carry 1)
+            *   2 + 1 + 1 (carry) = 4
+        4.  The result is **4.00** or simply **4**.
+    *   **Answer:** 4
+
+*   **9. Converting Seconds to Hours in Decimal (Example: What is 1 second in hours as a decimal?)**
+    *   **Method:** Convert the units. 1 hour has 60 minutes, and 1 minute has 60 seconds. So, 1 hour = 60 * 60 = 3600 seconds. To find 1 second in hours, calculate 1/3600. Then convert the fraction to a decimal.
+    *   **Calculation:**
+        1.  1 second = 1/3600 hours.
+        2.  To convert 1/3600 to a decimal, divide 1 by 3600.
+        3.  The speaker approximates this division and then adjusts for powers of 10 based on options. For example, `1 / 3600` can be written as `(1/36) * 10^-2`.
+        4.  Dividing 1 by 36 gives approximately `0.027...`.
+        5.  Multiplying by `10^-2` (moving the decimal two more places to the left) gives `0.00027`.
+    *   **Answer:** 0.00027 (approximately)
+
+*   **10. Evaluating an Expression with Place Values (Example: If 47.2506 = 4A + 7B + 2C + 5D + 6E, find 5A + 3B + 6C + D + 3E)**
+    *   **Method:** First, determine the value of each variable (A, B, C, D, E) by comparing the given equation (47.2506 = 4A + 7B + 2C + 5D + 6E) with the place values of the number 47.2506. Then, substitute these values into the second expression and calculate the result.
+    *   **Calculation:**
+        1.  From `47.2506 = 4A + 7B + 2C + 5D + 6E`:
+            *   `40` implies `4A` so **A = 10**.
+            *   `7` implies `7B` so **B = 1**.
+            *   `0.2` implies `2C` so **C = 1/10** (or 0.1).
+            *   `0.05` implies `5D`. The speaker states **D = 100** and says `0.05` comes, which is mathematically incorrect (`5 * 100 = 500`). For `5D = 0.05`, `D` should be `0.01` or `1/100`. I will proceed with the speaker's stated value of `D=100` for the subsequent calculation, as per the source.
+            *   `0.0006` implies `6E` so **E = 1/10000** (or `10^-4`).
+        2.  Substitute these values into `5A + 3B + 6C + D + 3E`:
+            *   `5 * 10 = 50`
+            *   `3 * 1 = 3`
+            *   `6 * (1/10) = 0.6`
+            *   `D = 100`
+            *   `3 * (10^-4) = 0.0003`
+        3.  Add them up: `50 + 3 + 0.6 + 100 + 0.0003`
+            *   Add whole numbers first: `50 + 3 + 100 = 153`.
+            *   Add decimal parts: `0.6 + 0.0003`.
+            *   Combine: `153.6003` (the speaker states `153.6003` and `1536003` in a slightly confusing sequence in, but `153.6003` is the standard sum).
+    *   **Answer:** 153.6003
+
+*   **11. Finding (y - x) / (y + x) from a Ratio (Example: If 0.15x = 0.04y)**
+    *   **Method:** First, derive the ratio x/y from the given equation. Then, divide the numerator and denominator of the expression to be found by either x or y (usually the one in the denominator of the ratio) to simplify it to terms of x/y or y/x.
+    *   **Calculation:**
+        1.  From `0.15x = 0.04y`, find x/y: `x/y = 0.04 / 0.15`.
+        2.  Multiply numerator and denominator by 100 to remove decimals: `x/y = 4 / 150`.
+        3.  Simplify the fraction: `x/y = 2 / 75`.
+        4.  Now, evaluate `(y - x) / (y + x)`. Divide numerator and denominator by `y`:
+            *   `(y/y - x/y) / (y/y + x/y)` = `(1 - x/y) / (1 + x/y)`.
+        5.  Substitute `x/y = 2/75`:
+            *   `(1 - 2/75) / (1 + 2/75)`.
+            *   Numerator: `(75 - 2) / 75 = 73 / 75`.
+            *   Denominator: `(75 + 2) / 75 = 77 / 75`.
+            *   Divide the numerator by the denominator: `(73 / 75) / (77 / 75)` = `73 / 77` (the `75`s cancel out).
+    *   **Answer:** 73/77
+
+*   **12. Converting Repeating Decimal to Fraction (Example: Convert 0.23 with 23 repeating to a fraction)**
+    *   **Method:** For a repeating decimal of the form `0.XX` where `XX` repeats, the fraction is `XX/99`.
+    *   **Calculation:**
+        1.  Given 0.23 with `23` repeating (indicated by a bar over 23).
+        2.  The repeating digits are 23.
+        3.  Apply the rule: `23 / 99`.
+    *   **Answer:** 23/99
+
+*   **13. Price Comparison and Time Calculation (Example: How many years until x's price is 40 paise more than y's price, given starting prices and annual increases?)**
+    *   **Method:** Set up an equation where `(initial price of x + annual increase of x * years)` minus `(initial price of y + annual increase of y * years)` equals the target difference (40 paise). Convert all amounts to rupees for consistency. Solve the equation for the number of years.
+    *   **Calculation:**
+        1.  Given:
+            *   Initial price of x (2021) = 4.20 Rupees.
+            *   Annual increase of x = 40 paise = 0.40 Rupees.
+            *   Initial price of y (2021) = 6.30 Rupees.
+            *   Annual increase of y = 15 paise = 0.15 Rupees.
+            *   Target difference = 40 paise = 0.40 Rupees.
+            *   Let `Z` be the number of years.
+        2.  Set up the equation: `(4.20 + Z * 0.40) - (6.30 + Z * 0.15) = 0.40`.
+        3.  Simplify: `4.20 + 0.40Z - 6.30 - 0.15Z = 0.40`.
+        4.  Combine Z terms: `0.40Z - 0.15Z = 0.25Z`.
+        5.  Combine constant terms: `4.20 - 6.30 = -2.10`.
+        6.  Equation becomes: `0.25Z - 2.10 = 0.40`.
+        7.  Move constant to right side: `0.25Z = 0.40 + 2.10 = 2.50`.
+        8.  Solve for Z: `Z = 2.50 / 0.25`.
+        9.  Multiply numerator and denominator by 100 to remove decimals: `Z = 250 / 25`.
+        10. `Z = 10`.
+    *   **Answer:** 10 years
+
+*   **14. Solving for a Missing Digit in a Subtraction (Example: Find the missing digit in 603.26 - 54.843 - 54.843 = 54?83)**
+    *   **Method:** Combine the terms and perform the subtraction. The speaker suggests combining the two negative numbers first.
+    *   **Calculation (as per speaker's steps, noting numerical inconsistency):**
+        1.  First, add the two negative numbers: `54.843 + 54.843 = 109.686`.
+        2.  The problem becomes: `603.26 - 109.686`.
+        3.  The speaker then performs the subtraction, describing a digit-by-digit process. However, the speaker's stated result `54?83` implies a missing digit in a number format (e.g., `54.X83` or `54X.83`). The speaker eventually states that the missing digit is `8` and the answer is `54.83`.
+        4.  **Note:** Performing `603.26 - 109.686` using standard arithmetic yields `493.574`. The speaker's final implied result structure and value (`54.83`) seem inconsistent with this direct calculation from the provided numbers, possibly due to a misstatement of the original problem or a specific context from their PDF not fully elaborated in the transcript.
+    *   **Answer (as per speaker's derived format):** The missing digit is **8**, making the result `54.83`.
+
+*   **15. Converting Mixed Fraction to Decimal (Example: Convert 101 27/100000 to a decimal)**
+    *   **Method:** A mixed fraction `A B/C` can be written as `A + B/C`. Convert the fractional part (`B/C`) to a decimal and then add it to the whole number part (`A`).
+    *   **Calculation:**
+        1.  Rewrite the mixed fraction as an addition: `101 + 27/100000`.
+        2.  Convert the fraction `27/100000` to a decimal. Since there are 5 zeros in the denominator, the decimal point moves 5 places to the left: `0.00027`.
+        3.  Add the whole number and the decimal: `101 + 0.00027 = 101.00027`.
+    *   **Answer:** 101.00027
+
+*   **16. Simplification with Division and Powers of 10 (Example: Simplify 4.036 / 0.004)**
+    *   **Method:** Convert the decimal numbers into their equivalent form using powers of 10. Simplify the expression by cancelling common factors and applying exponent rules for powers of 10. Then convert the final result back to decimal.
+    *   **Calculation:**
+        1.  Rewrite the numbers using powers of 10:
+            *   `4.036` becomes `4036 × 10^-3` (3 digits after decimal).
+            *   `0.004` becomes `4 × 10^-3` (3 digits after decimal).
+        2.  The expression becomes: `(4036 × 10^-3) / (4 × 10^-3)`.
+        3.  Cancel `10^-3` from numerator and denominator.
+        4.  Divide `4036` by `4`: `4036 / 4 = 1009`.
+        5.  The result is `1009`. The speaker then mentions `100.9` as the answer based on option formatting.
+    *   **Answer:** 100.9
+
+*   **17. Simplification of Complex Decimal Multiplication/Division (Example: (2.03 * 2.92 * 0.000001) / (0.73 * 0.145 * 0.07))**
+    *   **Method:** Convert all decimals to integers multiplied by powers of 10. Cancel common powers of 10 and perform the remaining multiplication and division of integers.
+    *   **Calculation:**
+        1.  Rewrite numbers with powers of 10 (as implied by speaker's steps):
+            *   `2.03` (2 decimal places)
+            *   `2.92` (2 decimal places)
+            *   `0.000001` (6 decimal places, `10^-6`)
+            *   `0.73` (2 decimal places)
+            *   `0.145` (3 decimal places)
+            *   `0.07` (2 decimal places)
+        2 the `10^-6` from `0.000001` in the numerator cancels with the total `10^-6` from the denominator's decimal places (this implies simplifying the number of decimal places for the overall denominator to 6, despite individual terms having more).
+        3.  Remaining numbers to calculate: `(203 * 292) / (73 * 145 * 7)`.
+        4.  Perform cancellations:
+            *   `292 / 73 = 4`.
+            *   The expression becomes `(203 * 4) / (145 * 7)`.
+            *   `203 / 7 = 29`.
+            *   The expression becomes `(29 * 4) / 145`.
+        5.  Calculate `29 * 4 = 116`.
+        6.  The expression is `116 / 145`.
+        7.  Divide: `116 / 145 = 0.8`.
+    *   **Answer:** 0.8
+
+*   **18. Solving for a Question Mark in a Division (Example: 0.0009 / ? = 0.001)**
+    *   **Method:** Rearrange the equation to isolate the question mark. Convert decimals to powers of 10 for easier calculation, and then simplify.
+    *   **Calculation:**
+        1.  Rearrange: `? = 0.0009 / 0.001`.
+        2.  Convert to powers of 10:
+            *   `0.0009 = 9 × 10^-4` (4 digits after decimal).
+            *   `0.001 = 1 × 10^-3` (3 digits after decimal).
+        3.  The expression becomes: `(9 × 10^-4) / (1 × 10^-3)`.
+        4.  Simplify the powers of 10: `10^-4 / 10^-3 = 10^(-4 - (-3)) = 10^-1`.
+        5.  The expression becomes: `9 × 10^-1`.
+        6.  Convert back to decimal: `9 × 10^-1 = 0.9`.
+    *   **Answer:** 0.9
+
+*   **19. Simplification of Decimal Addition/Subtraction (Example: 38.89 + 12.952 - 38.54002 = ?)**
+    *   **Method:** Perform addition and subtraction from left to right, being careful with decimal alignment and place values. The speaker advises against writing down numbers and to perform calculations mentally or by processing digits from right to left.
+    *   **Calculation (as per speaker's steps, noting calculation inconsistency):**
+        1.subtract digits from `38.54002` from `12.952` and combine with `38.89`.
+        2.  They state:
+            *   Last digits (implied alignment): "2 minus 2 is zero".
+            *   Next digits: "5 minus 0 is 5".
+            *   Next digits: "9 minus 0 is 9".
+            *   This gives `...950` as the decimal part.
+            *   For digits before the decimal: "9 + 2 = 11. Subtract 4 from 11, that is 7".
+            *   "Next 8 + 1 = 9. From 9, second last digit is 5. So 9 minus 5 is 4".
+            *   "Third digit here, third digit here. 8 minus 8 is 0. 3 minus 3 is 0".
+        3.  Based on this method, `47950`, which is presented as `47.950`.
+        4.  **Note:** Standard arithmetic calculation for `38.89 + 12.952 - 38.54002` would be `51.842 - 38.54002 = 13.30198`.
+
