@@ -1,0 +1,90 @@
+simple rules for determining if a number is divisible by 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 14, and 15. Instead of lengthy calculations
+Here are examples for the divisibility rules discussed
+
+*   **Divisibility by 2:**
+    *   **5648** is divisible by 2 because its last digit is 8.
+    *   **2750** is divisible by 2 because its last digit is 0.
+    *   **3746** is divisible by 2 because its last digit is 6.
+    *   **5647839** is *not* divisible by 2 because its last digit is 9.
+
+*   **Divisibility by 3:**
+    *   **564** is divisible by 3 because the sum of its digits (5+6+4 = 15) is divisible by 3.
+    *   **47789** is *not* divisible by 3 because the sum of its digits (4+7+7+8+9 = 35) is *not* divisible by 3. (Note: The transcript states 4+7+8+9 = 28 in, which is the sum of digits, but still 28 is not divisible by 3).
+
+*   **Divisibility by 4:**
+    *   **98496** is divisible by 4 because its last two digits, 96, are divisible by 4 (96 ÷ 4 = 24).
+    *   **97486** is *not* divisible by 4 because its last two digits, 86, are *not* divisible by 4.
+
+*   **Divisibility by 5:**
+    *   Examples of numbers divisible by 5 include **100, 105, 2090, 3095, 495, 65** because their last digit is either 0 or 5.
+    *   **96479805** is divisible by 5 because its last digit is 5.
+    *   A number like **9647980** (if the last digit 5 is removed) is *not* divisible by 5 because its last digit is 0 (it should be 0 *or* 5). (Correction: the example was **9647980** before the 5 was added, implying the last digit was 0 and it was divisible by 5. The speaker then removed the 5 and said the number is *not* divisible because the last digit isn't 0 or 5. This implies the number became `964798` with a last digit of 8, which is indeed not divisible by 5).
+
+*   **Divisibility by 6:**
+    *   **5648** is *not* divisible by 6 because, although it is divisible by 2 (last digit is 8), the sum of its digits (5+6+4+8 = 23) is *not* divisible by 3. For a number to be divisible by 6, it must be divisible by *both* 2 and 3.
+    *   **9834** is divisible by 6 because it is divisible by 2 (last digit is 4) and the sum of its digits (9+8+3+4 = 24) is divisible by 3.
+
+*   **Divisibility by 8:**
+    *   **4678512** is divisible by 8 because its last three digits, 512, are divisible by 8 (512 ÷ 8 = 64).
+    *   **4968564** is *not* divisible by 8 because its last three digits, 564, are *not* divisible by 8.
+
+*   **Divisibility by 9:**
+    *   **576** is divisible by 9 because the sum of its digits (5+7+6 = 18) is divisible by 9.
+    *   **6759** is divisible by 9 because the sum of its digits (6+7+5+9 = 27) is divisible by 9.
+    *   **7658** is *not* divisible by 9 because the sum of its digits (7+6+5+8 = 26) is *not* divisible by 9.
+
+*   **Divisibility by 10:**
+    *   Examples of numbers divisible by 10 include **100, 1000, 98980, 89560** because their last digit is 0.
+    *   **1009** (likely meant 1000 with a 9 at the end as an example, though the transcript says "1000 ఉందండి ఇప్పుడు ఇది డివిజబుల్ అవుతుందా కాదు ఎందుకు లాస్ట్ డిజిట్ జీరో లేదు 9 ఉంది") is *not* divisible by 10 because its last digit is 9.
+
+*   **Divisibility by 11:**
+    *   **564789** is *not* divisible by 11 because the difference between the sum of digits at odd places (5+4+8 = 17) and the sum of digits at even places (6+7+9 = 22) is 5 (|17-22|=5), which is *not* divisible by 11.
+    *   **979374** is divisible by 11 because the sum of digits at odd places (9+9+7 = 25) and the sum of digits at even places (7+3+4 = 14) have a difference of 11 (|25-14|=11), which is divisible by 11.
+
+*   **Divisibility by 12, 14, and 15:**
+    *   The sources explain the *rules* for these numbers but do not provide specific numerical examples for each.
+        *   A number is divisible by **12** if it is divisible by both 3 and 4.
+        *   A number is divisible by **14** if it is divisible by both 2 and 7.
+        *   A number is divisible by **15** if it is divisible by both 3 and 5.
+
+*   **General Practice Example:**
+    *   The number **574689** is given as an example to check for divisibility by multiple numbers.
+        *   It is *not* divisible by 2 because its last digit is 9.
+        *   It *is* divisible by 3 because the sum of its digits (5+7+4+6+8+9 = 39) is divisible by 3.
+        *   It is *not* divisible by 4 because its last two digits, 89, are *not* divisible by 4.
+        *   It is *not* divisible by 5 because its last digit is neither 0 nor 5.
+        *   It is *not* divisible by 6 because it is *not* divisible by 2.
+        *   It is *not* divisible by 7 (checked by direct division).
+        *   It is *not* divisible by 8 because its last three digits, 689, are *not* divisible by 8.
+        *   It is *not* divisible by 9 because the sum of its digits, 39, is *not* divisible by 9.
+        *   It is *not* divisible by 10 because its last digit is not 0.
+        *   It is *not* divisible by 11 because the difference between the sum of odd-placed digits (5+4+8 = 17) and even-placed digits (7+6+9 = 22) is 5, which is *not* divisible by 11.
+        *   It is *not* divisible by 12 because it is *not* divisible by 4.
+        *   It is *not* divisible by 14 because it is *not* divisible by 2 and 7.
+        *   It is *not* divisible by 15 because it is *not* divisible by 5, even though it is divisible by 3.
+        *   Therefore, this specific number (574689) is only divisible by 3 among the discussed numbers.
+Divisibility Rule for 7:
+To check if a number is divisible by 7, follow these steps:
+
+Take the last digit of the number.
+
+Double it.
+
+Subtract this doubled value from the rest of the number (the number without the last digit).
+
+If the result is divisible by 7 (including 0), then the original number is divisible by 7.
+
+You can repeat this process until you get a small enough number to easily check.
+
+Example:
+Is 203 divisible by 7?
+
+Last digit: 3
+
+Double it: 3 × 2 = 6
+
+Remaining number: 20
+
+Subtract: 20 − 6 = 14
+
+Since 14 is divisible by 7, 203 is divisible by 7.
