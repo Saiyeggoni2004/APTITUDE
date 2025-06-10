@@ -1,0 +1,92 @@
+### Decimal to Fraction Examples
+
+The conversion of decimals to fractions is categorised into two types: Type 1 (without a bar) and Type 2 (with a bar, indicating repeating digits).
+
+**Type 1: Decimals without a bar**
+This type of conversion is described as generally straightforward and familiar from earlier learning.
+*   **0.12** can be converted to **12/100**.
+*   **0.53** can be converted to **53/100**.
+*   **0.26** can be converted to **26/100**.
+*   **0.893** can be converted to **893/1000** (because there are three digits after the decimal point, three zeros are placed after 1 in the denominator).
+*   **5.26** can be converted to **526/100**, or broken down as **5 + 0.26**, which then becomes **5 + 26/100**, leading to **500/100 + 26/100 = 526/100** using LCM.
+
+**Type 2: Decimals with a bar (indicating repeating digits)**
+This type requires specific "tricks" or techniques for conversion. The sources divide Type 2 into three models.
+
+**Model 1: Decimals where all digits after the decimal point have a bar (e.g., 0.XYZ bar)**
+For these cases, the number under the bar becomes the numerator, and the denominator consists of as many nines as there are digits under the bar.
+*   **0.4 bar** converts to **4/9**.
+*   **0.6 bar** converts to **6/9**.
+*   **0.3 bar** converts to **3/9**.
+*   **0.56 bar** (meaning 0.565656...) converts to **56/99** (two digits under the bar, so two nines).
+*   **0.893 bar** (meaning 0.893893...) converts to **893/999** (three digits under the bar, so three nines).
+    *   **Important note for Model 1:** This method applies when the decimal starts with zero point (0.) followed by digits all under the bar.
+
+**Model 2: Decimals where only a part of the digits after the decimal point have a bar (e.g., 0.X_Y bar)**
+To convert these:
+1.  Write the entire number after the decimal point as the numerator.
+2.  Subtract the number that is *not* under the bar from this numerator.
+3.  In the denominator, place a nine for each digit that *has* a bar, and a zero for each digit that *does not* have a bar (after the decimal point).
+*   **0.56 bar** (meaning 0.5666...) converts to **(56 - 5) / 90 = 51/90**.
+    *   Here, 56 is the full number, 5 is the digit without the bar, one digit (6) has a bar (so one 9), and one digit (5) does not have a bar (so one 0).
+*   **0.657 bar** (meaning 0.65777...) converts to **(657 - 65) / 900 = 592/900**.
+    *   657 is the full number, 65 is the part without the bar, one digit (7) has a bar (one 9), and two digits (65) do not have a bar (two 0s).
+*   **0.365 bar** (meaning 0.365656...) converts to **(365 - 3) / 990 = 362/990**.
+    *   365 is the full number, 3 is the part without the bar, two digits (65) have a bar (two 9s), and one digit (3) does not have a bar (one 0).
+*   **0.578 bar** (meaning 0.57888...) is given as a problem to solve. Following the rule, it would be (578 - 57) / 900.
+
+**Model 3: Decimals with an integer part before the decimal point (e.g., X.YZ bar)**
+These are converted by separating the integer part and then applying the Model 1 or Model 2 technique to the decimal part.
+*   **5.24 bar** (meaning 5.242424...) converts to **5 + 0.24 bar**.
+    *   Since 0.24 bar is a Model 1 type, it becomes 24/99.
+    *   So, the full expression is **5 + 24/99**.
+    *   Converting to a single fraction: (5 * 99 + 24) / 99 = (495 + 24) / 99 = **519/99**.
+*   **3.52 bar** (meaning 3.5222...) converts to **3 + 0.52 bar**.
+    *   Since 0.52 bar is a Model 2 type, it becomes (52 - 5) / 90 = 47/90.
+    *   So, the full expression is **3 + 47/90**.
+    *   Converting to a single fraction: (3 * 90 + 47) / 90 = (270 + 47) / 90 = **317/90**.
+*   **69.18 bar** (meaning 69.1888...) converts to **69 + 0.18 bar**.
+    *   Since 0.18 bar is a Model 2 type, it becomes (18 - 1) / 90 = 17/90.
+    *   So, the full expression is **69 + 17/90**.
+    *   Converting to a single fraction: (69 * 90 + 17) / 90 = (6210 + 17) / 90 = **6227/90**.
+
+### Consecutive Numbers Examples
+
+Consecutive numbers are discussed in three types: Natural, Odd, and Even.
+
+**Consecutive Natural Numbers**
+*   **Definition/Sequence:** 1, 2, 3, 4, 5, 6, and so on.
+*   **Form for Sum:** x + (x+1) + (x+2) + ....
+    *   If **x = 5**, the sequence starts as 5, 6, 7, 8....
+    *   **Example Problem:** If the sum of **three consecutive natural numbers** is 102, find the middle number.
+        *   The numbers are x, x+1, x+2.
+        *   Their sum: x + (x+1) + (x+2) = 3x + 3 = 102.
+        *   Solving for x: 3x = 99, so x = 33.
+        *   The numbers are 33, 34, 35. The **middle number is 34**.
+    *   **Example Problem:** If the sum of the **first three consecutive natural numbers** is 96, find the next three consecutive natural numbers.
+        *   The numbers are x, x+1, x+2.
+        *   Their sum: 3x + 3 = 96.
+        *   Solving for x: 3x = 93, so x = 31.
+        *   The first three numbers are 31, 32, 33.
+        *   The **next three consecutive natural numbers** are **34, 35, 36**.
+
+**Consecutive Odd Numbers**
+*   **Definition/Sequence:** 1, 3, 5, 7, 9, and so on.
+*   **Form for Sum:** x + (x+2) + (x+4) + ....
+    *   If **x = 3**, and you need the sum of five consecutive odd numbers starting from 3, the numbers are 3, 5, 7, 9, 11. Their sum is 3+5+7+9+11 = **35**.
+    *   If **x = 45**, the sequence starts as 45, 47, 49....
+    *   **Example Problem:** If the sum of **three consecutive odd numbers** is 141, find the first number.
+        *   The numbers are x, x+2, x+4.
+        *   Their sum: x + (x+2) + (x+4) = 3x + 6 = 141.
+        *   Solving for x: 3x = 135, so x = 45.
+        *   The **first number is 45**. The sequence is 45, 47, 49.
+
+**Consecutive Even Numbers**
+*   **Definition/Sequence:** 2, 4, 6, 8, and so on.
+*   **Form for Sum:** x + (x+2) + (x+4) + ... (same as consecutive odd numbers).
+    *   If **x = 4**, the sequence starts as 4, 6, 8, 10, 12....
+    *   **Example Problem:** If the sum of **four consecutive even numbers** is 100, find the first number.
+        *   The numbers are x, x+2, x+4, x+6.
+        *   Their sum: x + (x+2) + (x+4) + (x+6) = 4x + 12 = 100.
+        *   Solving for x: 4x = 88, so x = 22.
+        *   The **first number is 22**. The sequence of numbers is 22, 24, 26, 28.
