@@ -1,0 +1,55 @@
+Here's how to calculate remainders, including an example:
+**1. Basic Remainder Calculation**
+When finding the remainder of a simple division, such as 43 divided by 5, you perform the division and note the leftover amount. For instance, 5 multiplied by 8 is 40, so the remainder for 43 divided by 5 is **3** (43 - 40 = 3). The key is to perform these calculations mentally to save time in competitive exams, rather than always writing out the full division. The remainder value must always be **less than the divisor**. If the calculated remainder is greater than or equal to the divisor, you must divide again until the remainder is less than the divisor.
+**2. Remainders in Operations (Multiplication and Addition)**
+When dealing with expressions involving multiplication or addition, you can find the remainder of each individual term first, and then apply the operation to those remainders.
+
+*   **Multiplication:** If you have an expression like (86 * 23) / 11, instead of multiplying 86 by 23 and then dividing by 11, you can find the individual remainders.
+    *   For 86/11: 11 * 7 = 77, so the remainder is 86 - 77 = **9**.
+    *   For 23/11: 11 * 2 = 22, so the remainder is 23 - 22 = **1**.
+    *   Then, multiply these individual remainders: 9 * 1 = **9**. This final product is the remainder, provided it is less than the divisor (11 in this case).
+*   **Addition:** Similarly, for addition like (38 + 71 + 86) / 16, find the individual remainders.
+    *   For 38/16: 16 * 2 = 32, remainder **6**.
+    *   For 71/16: 16 * 4 = 64, remainder **7**.
+    *   For 86/16: 16 * 5 = 80, remainder **6**.
+    *   Add these remainders: 6 + 7 + 6 = **19**. Since 19 is greater than the divisor (16), you must divide 19 by 16 again.
+    *   19/16: 16 * 1 = 16, remainder **3**. So, the final remainder is 3.
+
+**3. Remainders with Powers**
+When calculating remainders for numbers raised to powers (e.g., 7^5 / 4), multiplying the number by itself multiple times would be time-consuming. Instead, you can find the remainder of the base number first, and then apply the power to that remainder.
+
+The general strategy is to find a power of the remainder that results in a number very close to a multiple of the divisor, ideally leaving a remainder of **1 or -1** (the sources primarily focus on 1). This makes calculations much simpler.
+
+**Example Calculation: 243^165 / 5**
+
+Let's find the remainder when 243 raised to the power of 165 is divided by 5.
+
+1.  **Find the remainder of the base (243) when divided by 5:**
+    *   Divide 243 by 5.
+    *   5 * 40 = 200, 5 * 8 = 40. So, 5 * 48 = 240.
+    *   The remainder is **3** (243 - 240 = 3).
+    *   The problem now becomes finding the remainder of **3^165 / 5**.
+
+2.  **Look for a power of the new base (3) that gives a remainder of 1 (or close to 1) when divided by the divisor (5):**
+    *   3^1 = 3 (Remainder is 3 when divided by 5).
+    *   3^2 = 9 (Remainder is 4 when divided by 5, as 5 * 1 = 5, 9 - 5 = 4).
+    *   3^3 = 27 (Remainder is 2 when divided by 5, as 5 * 5 = 25, 27 - 25 = 2).
+    *   3^4 = 81 (Remainder is 1 when divided by 5, as 5 * 16 = 80, 81 - 80 = 1). **This is ideal!**.
+
+3.  **Rewrite the power (165) in terms of the chosen exponent (4):**
+    *   Divide 165 by 4:
+        *   165 ÷ 4 = 41 with a remainder of 1.
+    *   This means 3^165 can be written as (3^4)^41 * 3^1.
+
+4.  **Substitute and calculate the remainder:**
+    *   (3^4)^41 * 3^1 / 5
+    *   We know 3^4 = 81.
+    *   So, (81)^41 * 3 / 5
+    *   Now, find the remainder of 81 when divided by 5:
+        *   81 / 5 leaves a remainder of **1** (since 5 * 16 = 80).
+    *   Substitute this remainder back into the expression:
+        *   (1)^41 * 3 / 5
+    *   1 raised to any power is still 1.
+    *   So, 1 * 3 / 5 = **3**.
+
+Therefore, the remainder when 243^165 is divided by 5 is **3**.
