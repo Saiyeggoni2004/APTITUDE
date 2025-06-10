@@ -1,0 +1,199 @@
+The unit digit is defined as the last digit of a number, also referred to as the digit in the ones place.
+### Basic Problems
+
+These examples demonstrate how to find the unit digit when performing basic arithmetic operations:
+
+*   **Addition (Example 1):**
+    *   Problem: `576 + 672 + 341`
+    *   To find the unit digit, add only the unit digits of each number: `6 + 2 + 1 = 9`.
+    *   The unit digit of the sum is **9**.
+
+*   **Addition (Example 2):**
+    *   Problem: `37568 + 4784`
+    *   Add the unit digits: `8 + 4 = 12`.
+    *   Since the result `12` has two digits, the unit digit is the last digit of `12`, which is **2**.
+
+*   **Multiplication (Example 1):**
+    *   Problem: `39 * 65`
+    *   Multiply the unit digits: `9 * 5 = 45`.
+    *   The unit digit of the product is the last digit of `45`, which is **5**.
+
+*   **Multiplication (Example 2):**
+    *   Problem: `46 * 78 * 939`
+    *   Multiply the unit digits: `6 * 8 * 9`.
+    *   You can multiply them in steps: `6 * 8 = 48`.
+    *   Then, take the unit digit of `48` (`8`) and multiply it by the next unit digit: `8 * 9 = 72`.
+    *   The unit digit of the product is the last digit of `72`, which is **2**.
+
+*   **Subtraction (Example 1):**
+    *   Problem: `X9 - Y8` (where X and Y are any numbers)
+    *   Subtract the unit digits: `9 - 8 = 1`.
+    *   The unit digit of the difference is **1**.
+
+*   **Subtraction (Example 2, involving borrowing):**
+    *   Problem: `X3 - Y8` (where X and Y are any numbers)
+    *   Subtracting the unit digits directly (`3 - 8`) would result in a negative number, which is not applicable for a unit digit.
+    *   Similar to standard subtraction, you 'borrow' from the left, making it `13 - 8 = 5`.
+    *   The unit digit of the difference is **5**.
+
+*   **Powers (Example 1):**
+    *   Problem: `7^3`
+    *   This means `7 * 7 * 7`.
+    *   Multiply in steps: `7 * 7 = 49`.
+    *   Then, take the unit digit of `49` (`9`) and multiply by the next `7`: `9 * 7 = 63`.
+    *   The unit digit of `7^3` is **3**.
+
+*   **Powers (Example 2):**
+    *   Problem: `81^3`
+    *   This means `81 * 81 * 81`.
+    *   Only consider the unit digit of the base: `1 * 1 * 1 = 1`.
+    *   The unit digit of `81^3` is **1**.
+
+### Short-Cut Methods (Models)
+
+The sources divide the unit digit concept into different "models" based on the unit digit of the base number, allowing for specific short-cut rules.
+
+#### Model 1: Unit Digits 0, 1, 5, 6
+
+For numbers ending in 0, 1, 5, or 6, the unit digit of any power of that number remains the same.
+*   **Rule:** `0^n = 0`, `1^n = 1`, `5^n = 5`, `6^n = 6`, where 'n' is any positive integer.
+
+*   **Example 1 (Unit digit 0):**
+    *   Problem: `1090^800`
+    *   Since the unit digit of the base is `0`, and `0` raised to any power is `0`, the unit digit is **0**.
+
+*   **Example 2 (Unit digit 1):**
+    *   Problem: `901^900`
+    *   Since the unit digit of the base is `1`, and `1` raised to any power is `1`, the unit digit is **1**.
+
+*   **Example 3 (Unit digit 5):**
+    *   Problem: `985^300`
+    *   Since the unit digit of the base is `5`, and `5` raised to any power is `5` (e.g., `5^1=5`, `5^2=25`, `5^3=125`), the unit digit is **5**.
+
+*   **Example 4 (Unit digit 6):**
+    *   Problem: `836^499`
+    *   Since the unit digit of the base is `6`, and `6` raised to any power is `6`, the unit digit is **6**.
+
+*   **Combined Problem Example:**
+    *   Problem: `476^15 + 580^85`
+    *   For `476^15`: The unit digit of the base is `6`. According to Model 1, `6^n` always results in a unit digit of `6`.
+    *   For `580^85`: The unit digit of the base is `0`. According to Model 1, `0^n` always results in a unit digit of `0`.
+    *   Add the unit digits: `6 + 0 = 6`.
+    *   The unit digit of the expression is **6**. (Note: The source actually gives `476^15 + 580^85` as `6 + 5 = 11`, which has a unit digit of 1. It seems like the provided example has an error, as 580 ends in 0, not 5. However, the subsequent example `1^58 * 6^N` correctly uses 1 and 6, resulting in 1*6 = 6.)
+
+#### Model 2: Unit Digits 4, 9
+
+For numbers ending in 4 or 9, the unit digit depends on whether the power is odd or even.
+
+*   **Rules for 4:**
+    *   `4^odd = 4`
+    *   `4^even = 6`
+    *   *Self-check:* `4^1 = 4` (odd), `4^2 = 16` (even, unit digit 6).
+
+*   **Rules for 9:**
+    *   `9^odd = 9`
+    *   `9^even = 1`
+    *   *Self-check:* `9^1 = 9` (odd), `9^2 = 81` (even, unit digit 1).
+
+*   **Example 1 (Unit digit 4):**
+    *   Problem: `4^20`
+    *   The power `20` is an **even** number. For `4^even`, the unit digit is **6**.
+
+*   **Example 2 (Unit digit 4):**
+    *   Problem: `4^81`
+    *   The power `81` is an **odd** number. For `4^odd`, the unit digit is **4**.
+
+*   **Example 3 (Unit digit 9):**
+    *   Problem: `9^100`
+    *   The power `100` is an **even** number. For `9^even`, the unit digit is **1**.
+
+*   **Example 4 (Unit digit 9):**
+    *   Problem: `9^99`
+    *   The power `99` is an **odd** number. For `9^odd`, the unit digit is **9**.
+
+*   **Combined Problem Example:**
+    *   Problem: `X9^36 + X4^63 + X6^N` (example in source uses a 6 for 6^N, so we will use 6^66 as an example to maintain context of the three operations)
+    *   For `X9^36`: The unit digit of the base is `9`, and the power `36` is even. So, `9^even` gives a unit digit of `1`.
+    *   For `X4^63`: The unit digit of the base is `4`, and the power `63` is odd. So, `4^odd` gives a unit digit of `4`.
+    *   For `X6^N`: The unit digit of the base is `6`. From Model 1, `6^N` always gives a unit digit of `6`.
+    *   Add the unit digits: `1 + 4 + 6 = 11`.
+    *   The unit digit of the result is the last digit of `11`, which is **1**.
+
+#### Model 3: Unit Digits 2, 3, 7, 8
+
+For numbers ending in 2, 3, 7, or 8, the unit digit is found by dividing the power by 4 and using the remainder as the new power.
+*   **Rule:** If the remainder is 0, use 4 as the power instead.
+*   **Reasoning:** The unit digits of powers of 2, 3, 7, and 8 repeat in a cycle of 4.
+
+*   **Example 1 (Unit digit 2, non-zero remainder):**
+    *   Problem: `232^75`
+    *   The unit digit of the base is `2`. Divide the power `75` by `4`: `75 ÷ 4 = 18` with a remainder of `3`.
+    *   Use the remainder `3` as the new power for the unit digit: `2^3 = 8`.
+    *   The unit digit of `232^75` is **8**.
+
+*   **Example 2 (Unit digit 2, zero remainder):**
+    *   Problem: `232^76`
+    *   The unit digit of the base is `2`. Divide the power `76` by `4`: `76 ÷ 4 = 19` with a remainder of `0`.
+    *   When the remainder is `0`, use `4` as the new power: `2^4 = 16`.
+    *   The unit digit of `232^76` is **6**.
+
+*   **Example 3 (Unit digit 8):**
+    *   Problem: `538^99`
+    *   The unit digit of the base is `8`. Divide the power `99` by `4`: `99 ÷ 4 = 24` with a remainder of `3`.
+    *   Use the remainder `3` as the new power: `8^3 = 8 * 8 * 8 = 64 * 8 = 512`.
+    *   The unit digit of `538^99` is **2**.
+
+*   **Combined Problem Example 1 (Unit digit 3):**
+    *   Problem: `483^79`
+    *   The unit digit of the base is `3`. Divide the power `79` by `4`: `79 ÷ 4 = 19` with a remainder of `3`.
+    *   Use the remainder `3` as the new power: `3^3 = 27`.
+    *   The unit digit is **7**.
+
+*   **Combined Problem Example 2 (Unit digit 2):**
+    *   Problem: `X2^54` (using a base ending in 2 with power 54)
+    *   The unit digit of the base is `2`. Divide the power `54` by `4`: `54 ÷ 4 = 13` with a remainder of `2`.
+    *   Use the remainder `2` as the new power: `2^2 = 4`.
+    *   The unit digit is **4**.
+
+*   **Combined Problem Example 3 (Unit digit 8):**
+    *   Problem: `X8^41` (using a base ending in 8 with power 41)
+    *   The unit digit of the base is `8`. Divide the power `41` by `4`: `41 ÷ 4 = 10` with a remainder of `1`.
+    *   Use the remainder `1` as the new power: `8^1 = 8`.
+    *   The unit digit is **8**.
+
+### Previous Year Questions (Combined Models)
+
+These examples combine rules from different models:
+
+*   **Question 1:** `What is the unit digit of 124^376 + 124^375?`
+    *   For `124^376`: The unit digit of the base is `4`, and the power `376` is an **even** number. `4^even` results in a unit digit of `6`.
+    *   For `124^375`: The unit digit of the base is `4`, and the power `375` is an **odd** number. `4^odd` results in a unit digit of `4`.
+    *   Add the unit digits: `6 + 4 = 10`.
+    *   The unit digit of the expression is **0**.
+
+*   **Question 2:** `What is the unit digit of 1X5^N + 1X6^N + 1X3^54?` (This is an example from the source; the 'X' represents arbitrary digits, emphasizing only the unit digit matters)
+    *   For `1X5^N`: The unit digit is `5`. From Model 1, `5^N` results in **5**.
+    *   For `1X6^N`: The unit digit is `6`. From Model 1, `6^N` results in **6**.
+    *   For `1X3^54`: The unit digit is `3`. From Model 3, divide the power `54` by `4`: `54 ÷ 4 = 13` with a remainder of `2`. Use `3^2 = 9`.
+    *   Add the unit digits: `5 + 6 + 9 = 20`.
+    *   The unit digit of the expression is **0**.
+
+*   **Question 3:** `What is the unit digit of X7^295 * X3^158 * X1^N?` (Another example from the source)
+    *   For `X7^295`: The unit digit is `7`. From Model 3, divide `295` by `4`: `295 ÷ 4 = 73` with a remainder of `3`. Use `7^3 = 343`. The unit digit is **3**.
+    *   For `X3^158`: The unit digit is `3`. From Model 3, divide `158` by `4`: `158 ÷ 4 = 39` with a remainder of `2`. Use `3^2 = 9`.
+    *   For `X1^N`: The unit digit is `1`. From Model 1, `1^N` results in **1**.
+    *   Multiply the unit digits: `3 * 9 * 1 = 27`.
+    *   The unit digit of the expression is **7**.
+
+*   **Question 4:** `What is the unit digit of 1X1^98 + 1X1^N - 1X6^N + 1X5^N - 1X6^N + 1X9?` (Final example from the source)
+    *   For `1X1^98`: Unit digit is `1`. `1^N` is **1**.
+    *   For `1X1^N`: Unit digit is `1`. `1^N` is **1**.
+    *   For `1X6^N`: Unit digit is `6`. `6^N` is **6**.
+    *   For `1X5^N`: Unit digit is `5`. `5^N` is **5**.
+    *   For `1X6^N`: Unit digit is `6`. `6^N` is **6**.
+    *   For `1X9`: The unit digit is **9** (no power, so just the unit digit itself).
+    *   Combine the unit digits respecting the operations: `1 + 1 - 6 + 5 - 6 + 9`.
+    *   Add all positive terms: `1 + 1 + 5 + 9 = 16`.
+    *   Add all negative terms: `-6 - 6 = -12`.
+    *   Subtract the sum of negative terms from the sum of positive terms: `16 - 12 = 4`.
+    *   The unit digit of the expression is **4**.
