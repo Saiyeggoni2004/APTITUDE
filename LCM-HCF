@@ -1,0 +1,157 @@
+### ⭐ LCM (Least Common Multiple) & HCF (Highest Common Factor) Explained with Examples
+
+#### 🔸 **What is LCM?**
+
+LCM is the smallest **common multiple** shared by two or more numbers.
+
+#### 🔸 **What is HCF?**
+
+HCF is the **largest common factor** that divides all numbers exactly.
+
+---
+
+### ✅ Methods of Finding **LCM**
+
+#### **1. Traditional Method**
+
+List the multiples of each number and pick the least one common to all.
+
+* **Example: LCM of 4, 5, and 6**
+
+  * Multiples:
+
+    * 4 → 4, 8, 12, … **60**
+    * 5 → 5, 10, 15, … **60**
+    * 6 → 6, 12, 18, … **60**
+  * **LCM = 60**
+
+---
+
+#### **2. Factorization Method**
+
+Use prime factorization and take the highest powers.
+
+* **Example: LCM of 8, 12, and 64**
+
+  * 8 = 2³, 12 = 2² × 3, 64 = 2⁶
+  * **LCM = 2⁶ × 3 = 192**
+
+* **Example: LCM of 12, 8, and 15**
+
+  * 12 = 2² × 3, 8 = 2³, 15 = 3 × 5
+  * **LCM = 2³ × 3 × 5 = 120**
+
+---
+
+#### **3. Division Method**
+
+Use successive division with common primes.
+
+* **Example: LCM of 8, 12, 6, and 4**
+
+  ```
+  2 | 8  12  6  4
+  2 | 4  6   3  2
+  2 | 2  3   3  1
+  3 | 1  3   3  1
+      1  1   1  1
+  ```
+
+  * **LCM = 2 × 2 × 2 × 3 = 24**
+
+* **Example: LCM of 12, 8, and 15**
+
+  * **LCM = 2 × 2 × 2 × 3 × 5 = 120**
+
+* **Example: LCM of 24, 36, and 40**
+
+  * **LCM = 2 × 2 × 2 × 3 × 3 × 5 = 360**
+
+---
+
+#### **4. Shortcut Method**
+
+Check multiples of the highest number in the set.
+
+* **Example: LCM of 3, 15, and 45**
+
+  * Highest = 45
+  * 45 is divisible by 3 and 15
+  * **LCM = 45**
+
+* **Example: LCM of 3, 11, and 15**
+
+  * Prime: 11; LCM of 3 & 15 = 15
+  * **LCM = 15 × 11 = 165**
+
+---
+
+### ✅ Methods of Finding **HCF**
+
+#### **1. Traditional Method**
+
+List all factors and take the highest one in common.
+
+* **Example: HCF of 2, 4, and 8**
+
+  * Factors of 2 = 1, 2
+  * Factors of 4 = 1, 2, 4
+  * Factors of 8 = 1, 2, 4, 8
+  * **HCF = 2**
+
+---
+
+#### **2. Factorization Method**
+
+Prime factorize and pick the lowest powers of common primes.
+
+* **Example: HCF of 27, 18, and 36**
+
+  * 27 = 3³, 18 = 2 × 3², 36 = 2² × 3²
+  * Common prime = 3²
+  * **HCF = 9**
+
+* **Example: HCF of 12, 6, 8, and 4**
+
+  * Common prime = 2 (lowest power is 1)
+  * **HCF = 2**
+
+---
+
+#### **3. Division Method**
+
+Apply the Euclidean algorithm.
+
+* **Example: HCF of 70 and 90**
+
+  * 90 ÷ 70 = remainder 20
+  * 70 ÷ 20 = remainder 10
+  * 20 ÷ 10 = remainder 0
+  * **HCF = 10**
+
+* **Example: HCF of 132 and 360**
+
+  * Continue until remainder is 0
+  * **HCF = 12**
+
+---
+
+#### **4. Shortcut Method**
+
+Check if the smallest number divides the others.
+
+* **Example: HCF of 27, 18, and 36**
+
+  * Try 18 → doesn’t divide 27
+  * Try next: **9**, which divides all
+  * **HCF = 9**
+
+Example: HCF of 24, 42, and 30
+
+Try 24 → not valid
+
+Next: 12 → not valid
+
+Try 6 → divides all
+
+HCF = 6
