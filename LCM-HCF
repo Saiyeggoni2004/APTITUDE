@@ -155,3 +155,130 @@ Next: 12 → not valid
 Try 6 → divides all
 
 HCF = 6
+*   **Example 1: Finding the Greatest Number which Divides Numbers Leaving the Same Remainder**
+    *   **Problem:** Find the greatest number such that it leaves the same remainder when it divides 183, 91, and 43.
+    *   **Solution Method:** When asked to find the largest number that divides X, Y, Z and leaves the same remainder, you should find the HCF of the differences between these numbers: (X - Y), (Y - Z), and (X - Z).
+    *   **Application:**
+        *   Differences are calculated: 183 - 91 = 92; 91 - 43 = 48; 183 - 43 = 140.
+        *   The HCF of 92, 48, and 140 is then calculated. The speaker suggests finding the HCF of the differences between these resulting numbers, or first finding the HCF of two numbers and then finding the HCF of that result with the third number.
+        *   Taking differences: 92 - 48 = 44; 140 - 92 = 48 (Wait, no. 140 - 92 = 48 is incorrect in the source; 140 - 92 = 48 is given as 10-2=8, 13-9=4, so 48). No, 140-92 is not 48. The speaker says 10 minus 2 is 8 and 13 minus 4 is 9. This means 92, so the actual calculation is 140-48=92. So 44 and 92.
+        *   Calculating HCF of 44 and 92: 92 divided by 44 gives 44 * 2 = 88 with a remainder of 4. Then 44 divided by 4 gives 4 * 11 = 44 with a remainder of 0.
+        *   **Answer:** The HCF is 4.
+
+*   **Example 2: Finding the Greatest Number which Divides Numbers Leaving Different Remainders**
+    *   **Problem:** Find the greatest number which, when dividing 1657 and 2037, leaves remainders 6 and 5 respectively.
+    *   **Solution Method:** When finding the largest number that divides X, Y, Z and leaves remainders A, B, C respectively, you should find the HCF of (X - A), (Y - B), and (Z - C).
+    *   **Application:**
+        *   Subtract the remainders from the numbers: 1657 - 6 = 1651; 2037 - 5 = 2032.
+        *   Calculate the HCF of 1651 and 2032.
+        *   2032 divided by 1651 gives 1651 * 1 = 1651 with a remainder of 381.
+        *   1651 divided by 381 gives 381 * 4 = 1524 with a remainder of 127.
+        *   381 divided by 127 gives 127 * 3 = 381 with a remainder of 0.
+        *   **Answer:** The HCF is 127. This is the greatest number.
+
+*   **Example 3: Finding LCM from Ratio and HCF**
+    *   **Problem:** The ratio of two numbers is 3:4, and their HCF is 4. Find their LCM.
+    *   **Solution Method:** If two numbers are in the ratio a:b, they can be represented as ax and bx, where x is their HCF. Once the numbers are identified, their LCM can be found.
+    *   **Application:**
+        *   Let the numbers be 3x and 4x. The HCF is x, which is given as 4.
+        *   So, the numbers are 3 * 4 = 12 and 4 * 4 = 16.
+        *   Calculate the LCM of 12 and 16.
+        *   Using prime factorization or division method: LCM(12, 16) = 4 * 3 * 4 = 48.
+        *   **Answer:** The LCM is 48.
+
+*   **Example 4: Meeting Point in a Circular Stadium (LCM Application)**
+    *   **Problem:** A, B, and C start at the same time in the same direction to run around a circular stadium. A completes a round in 252 seconds, B in 308 seconds, and C in 198 seconds. After what time will they all meet again at the starting point if they keep running in circles?
+    *   **Solution Method:** To find when they will meet again at the starting point, calculate the LCM of the times taken by each person to complete one round.
+    *   **Application:**
+        *   Find the LCM of 252, 308, and 198.
+        *   LCM (252, 308, 198) = 2 * 2 * 7 * 9 * 11 = 2772 seconds.
+        *   Convert 2772 seconds to minutes and seconds: 2772 / 60 = 46 minutes and 12 seconds.
+        *   **Answer:** They will meet again after 2772 seconds, or 46 minutes and 12 seconds.
+
+*   **Example 5: Smallest Number with Specific Remainders and Divisibility**
+    *   **Problem:** Find the smallest number which, when divided by 5, 6, 7, and 8, leaves a remainder of 3, and when divided by 9, leaves no remainder.
+    *   **Solution Method:** First, find the LCM of the initial divisors. Add the common remainder to this LCM to find a candidate number. Then, test multiples of this LCM plus the remainder until a number is found that is exactly divisible by the final divisor.
+    *   **Application:**
+        *   LCM of 5, 6, 7, and 8: 2 * 5 * 3 * 7 * 4 = 840.
+        *   The number is of the form 840x + 3.
+        *   Test x = 1: 840 * 1 + 3 = 843. 843 / 9 gives a remainder (not zero, 9*93 = 837, rem 6).
+        *   Test x = 2: 840 * 2 + 3 = 1680 + 3 = 1683. 1683 / 9 gives a remainder of 0 (1683 / 9 = 187).
+        *   **Answer:** The smallest number is 1683.
+
+*   **Example 6: Finding HCF and Sum of Digits for Numbers with Same Remainder**
+    *   **Problem:** Let N be the greatest number that will divide 1305, 4665, and 6905, leaving the same remainder. Find the sum of the digits in N.
+    *   **Solution Method:** Similar to Example 1, find the HCF of the absolute differences between the given numbers. Once HCF (N) is found, sum its digits.
+    *   **Application:**
+        *   Differences:
+            *   4665 - 1305 = 3360
+            *   6905 - 4665 = 2240
+            *   6905 - 1305 = 5600
+        *   Find the HCF of 3360, 2240, and 5600.
+        *   Take differences again to simplify: 3360 - 2240 = 1120; 5600 - 3360 = 2240.
+        *   Calculate HCF of 1120 and 2240: 2240 divided by 1120 is 2 with a remainder of 0.
+        *   So, the HCF is 1120. This is N.
+        *   Sum of digits in N: 1 + 1 + 2 + 0 = 4.
+        *   **Answer:** The sum of the digits in N is 4.
+
+*   **Example 7: Smallest Number to be Added for Exact Divisibility (LCM Application)**
+    *   **Problem:** Find the least number which should be added to 2497 so that the sum is exactly divisible by 5, 6, 4, and 3.
+    *   **Solution Method:** Find the LCM of the divisors. Divide the given number by the LCM and find the remainder. The amount to be added is the LCM minus the remainder.
+    *   **Application:**
+        *   LCM of 5, 6, 4, and 3: 60.
+        *   Divide 2497 by 60: 2497 / 60 = 41 with a remainder of 37.
+        *   The amount to be added = LCM - remainder = 60 - 37 = 23.
+        *   **Answer:** 23 should be added to 2497 for exact divisibility.
+
+*   **Example 8: Expressing a Number as a Product of Primes**
+    *   **Problem:** Express 252 as a product of primes.
+    *   **Solution Method:** Use prime factorization by successively dividing the number by prime numbers starting from 2.
+    *   **Application:**
+        *   252 / 2 = 126
+        *   126 / 2 = 63
+        *   63 / 3 = 21
+        *   21 / 3 = 7
+        *   7 / 7 = 1
+        *   **Answer:** 252 = 2 * 2 * 3 * 3 * 7 (or 2² * 3² * 7).
+
+*   **Example 9: Greatest Possible Length for Measurement (HCF Application)**
+    *   **Problem:** Find the greatest possible length which can be used to measure exactly the lengths 7 meters, 3 meters 85 cm, and 12 meters 95 cm.
+    *   **Solution Method:** Convert all lengths to a common unit (centimeters) and then find the HCF of these lengths.
+    *   **Application:**
+        *   Convert to cm: 7m = 700 cm; 3m 85cm = 385 cm; 12m 95cm = 1295 cm.
+        *   Find the HCF of 700, 385, and 1295.
+        *   Take HCF of two numbers first, e.g., 700 and 385.
+            *   700 / 385 = 1 remainder 315.
+            *   385 / 315 = 1 remainder 70.
+            *   315 / 70 = 4 remainder 35.
+            *   70 / 35 = 2 remainder 0.
+            *   HCF(700, 385) = 35.
+        *   Now find HCF of 35 and 1295.
+            *   1295 / 35 = 37 remainder 0.
+            *   HCF(35, 1295) = 35.
+        *   **Answer:** The greatest possible length is 35 cm.
+
+*   **Example 10: Sum of Reciprocals of Two Numbers Given Sum, HCF, and LCM**
+    *   **Problem:** The sum of two numbers is 55. Their HCF is 5, and their LCM is 120. Find the sum of the reciprocals of the numbers.
+    *   **Solution Method:** Use the relationship: Product of two numbers = HCF * LCM. The sum of reciprocals (1/a + 1/b) can be expressed as (a+b) / (ab).
+    *   **Application:**
+        *   Let the numbers be 'a' and 'b'.
+        *   Given: a + b = 55.
+        *   Given: HCF = 5, LCM = 120.
+        *   Product (ab) = HCF * LCM = 5 * 120 = 600.
+        *   Sum of reciprocals = (a+b) / (ab) = 55 / 600.
+        *   Simplify the fraction: 55 / 600 = 11 / 120.
+        *   **Answer:** The sum of the reciprocals is 11/120.
+
+*   **Example 11: Finding the Greatest Fraction**
+    *   **Problem:** Find the greatest number among 7/8, 13/16, 31/40, and 63/80.
+    *   **Solution Method:** To compare fractions, convert them to a common denominator. The common denominator can be the LCM of all denominators.
+    *   **Application:**
+        *   The denominators are 8, 16, 40, 80. The LCM of these is 80.
+        *   Convert each fraction to have a denominator of 80:
+            *   7/8 = (7 * 10) / (8 * 10) = 70/80
+            *   13/16 = (13 * 5) / (16 * 5) = 65/80
+            *   31/40 = (31 * 2) / (40 * 2) = 62/80
+            *   63/80 (already in this form)
+        *   Compare the numerators: 70, 65, 62, 63.
+        *   The largest numerator is 70.
+        *   **Answer:** The greatest fraction is 70/80, which corresponds to 7/8.
