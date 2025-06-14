@@ -1,0 +1,82 @@
+Here are the different types of problems discussed:
+### 1. Finding the Least Number with the Same Remainder
+This model focuses on finding the smallest number that, when divided by a set of given numbers, leaves the *same* remainder in each case.
+
+*   **Concept**: When "find the least number which when divided by..." is mentioned, it generally indicates that the Least Common Multiple (LCM) needs to be found. If a remainder is specified, and it is the same in every division, that remainder needs to be added to the calculated LCM.
+*   **Steps**:
+    1.  Calculate the LCM of the given numbers.
+    2.  Add the common remainder to the LCM to get the final answer.
+*   **Example 1**: Find the least number which, when divided by 4, 9, and 12, leaves a remainder of 3 in each case.
+    *   LCM of 4, 9, 12 is 36.
+    *   Add the remainder: 36 + 3 = 39. So, 39 is the answer.
+*   **Example 2**: Find the least number which, when divided by 4, 6, 8, 12, and 16, leaves a remainder of 2 in each case.
+    *   LCM of 4, 6, 8, 12, 16 is 48.
+    *   Add the remainder: 48 + 2 = 50. So, 50 is the answer.
+
+### 2. Finding the Least Number with Different (Respective) Remainders
+This model deals with finding the least number that, when divided by a set of given numbers, leaves *different* specified remainders respectively.
+
+*   **Concept**: If the remainders are different for each divisor, the first step is still to find the LCM of the given numbers. Then, check the difference between each divisor and its corresponding remainder. If this difference is constant across all pairs, subtract this common difference from the LCM.
+*   **Steps**:
+    1.  Calculate the LCM of the given numbers.
+    2.  Find the difference between each number and its respective remainder (e.g., number₁ - remainder₁, number₂ - remainder₂, etc.). This difference should be constant.
+    3.  Subtract this common difference from the LCM to get the final answer.
+*   **Example**: Find the least number which, when divided by 10, 9, and 8, leaves remainders 9, 8, and 7 respectively.
+    *   LCM of 10, 9, 8 is 360.
+    *   Calculate the difference between numbers and remainders:
+        *   10 - 9 = 1
+        *   9 - 8 = 1
+        *   8 - 7 = 1
+    *   The common difference is 1.
+    *   Subtract the common difference from the LCM: 360 - 1 = 359. So, 359 is the answer.
+
+### 3. Finding the Least or Greatest 'n'-Digit Number with No Remainder (Exactly Divisible)
+This type of problem asks for the smallest or largest number with a specific number of digits that is exactly divisible by a given set of numbers (meaning it leaves a remainder of zero).
+
+*   **Concept**: To be exactly divisible by multiple numbers, the target number must be a multiple of their LCM. The approach depends on whether a "least" or "greatest" 'n'-digit number is required.
+*   **Steps (General)**:
+    1.  Calculate the LCM of the numbers by which the target number must be divisible.
+    2.  Identify the 'n'-digit number:
+        *   For the **least 'n'-digit number**, this is usually 1 followed by (n-1) zeros (e.g., 1000 for least 4-digit).
+        *   For the **greatest 'n'-digit number**, this is 'n' nines (e.g., 9999 for greatest 4-digit).
+    3.  Divide the identified 'n'-digit number by the calculated LCM.
+    4.  **If finding the Least 'n'-Digit Number (exact division)**:
+        *   If the 'n'-digit number is not exactly divisible by the LCM (i.e., there's a remainder), subtract the remainder from the 'n'-digit number. This results in a number that is exactly divisible, but might be an (n-1)-digit number.
+        *   To ensure it's the *least* 'n'-digit number that is exactly divisible, add the LCM to this result.
+    5.  **If finding the Greatest 'n'-Digit Number (exact division)**:
+        *   Divide the greatest 'n'-digit number by the LCM.
+        *   Subtract the remainder from the greatest 'n'-digit number. This directly gives the largest 'n'-digit number exactly divisible by the LCM. Adding the LCM here would result in an (n+1)-digit number, which is not desired.
+*   **Example (Least 4-digit, no remainder)**: Find the least 4-digit number divisible by 4, 6, 8, 10.
+    *   LCM of 4, 6, 8, 10 is 120.
+    *   Least 4-digit number is 1000.
+    *   Divide 1000 by 120: 1000 = 120 * 8 + 40 (remainder 40).
+    *   Subtract remainder: 1000 - 40 = 960 (This is a 3-digit number).
+    *   Add LCM: 960 + 120 = 1080. So, 1080 is the answer.
+*   **Example (Greatest 4-digit, no remainder)**: Find the greatest 4-digit number which, when divided by 12, 15, 20, and 35, leaves no remainder.
+    *   LCM of 12, 15, 20, 35 is 420.
+    *   Greatest 4-digit number is 9999.
+    *   Divide 9999 by 420: 9999 = 420 * 23 + 339 (remainder 339).
+    *   Subtract remainder: 9999 - 339 = 9660. So, 9660 is the answer.
+
+### 4. Finding the Least or Greatest 'n'-Digit Number with a Same Remainder
+This model combines the concepts of finding an 'n'-digit number and leaving a specific same remainder.
+
+*   **Concept**: First, find the 'n'-digit number that is *exactly* divisible by the given numbers (by following the steps in Problem Type 3). Then, add the specified common remainder to this exactly divisible number.
+*   **Steps**:
+    1.  Calculate the LCM of the numbers by which the target number must be divisible.
+    2.  Find the 'n'-digit number that is *exactly* divisible by this LCM, using the method described in Problem Type 3 (Least or Greatest 'n'-Digit Number, No Remainder).
+    3.  Add the common remainder to this exactly divisible 'n'-digit number to get the final answer.
+*   **Example (Smallest 4-digit, remainder 3)**: Find the smallest 4-digit number such that when divided by 12, 18, 21, and 28, it leaves a remainder of 3 in each case.
+    *   LCM of 12, 18, 21, 28 is 252.
+    *   Least 4-digit number exactly divisible by 252:
+        *   Least 4-digit number is 1000.
+        *   Divide 1000 by 252: 1000 = 252 * 3 + 244 (remainder 244).
+        *   Subtract remainder and add LCM: (1000 - 244) + 252 = 756 + 252 = 1008. So, 1008 is the least 4-digit number exactly divisible by 252.
+    *   Add the required remainder (3): 1008 + 3 = 1011. So, 1011 is the final answer.
+*   **Example (Greatest 5-digit, remainder 3)**: Find the greatest 5-digit number which, when divided by 8, 9, and 10, leaves 3 as a remainder in each case.
+    *   LCM of 8, 9, 10 is 360.
+    *   Greatest 5-digit number exactly divisible by 360:
+        *   Greatest 5-digit number is 99999.
+        *   Divide 99999 by 360: 99999 = 360 * 277 + 279 (remainder 279).
+        *   Subtract remainder: 99999 - 279 = 99720. So, 99720 is the greatest 5-digit number exactly divisible by 360.
+    *   Add the required remainder (3): 99720 + 3 = 99723. So, 99723 is the final answer.
